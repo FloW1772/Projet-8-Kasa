@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../components/header/Header'
-import Footer from '../components/Footer'
-import Card from '../components/Card'
+import Footer from '../components/footer/Footer'
+import Card from '../components/card/Card'
 
 export default function Home() {
   const [logements, setLogements] = useState([])
