@@ -1,38 +1,30 @@
 .container {
-    width: 500px;
-    margin: 0 auto;
+  width: 500px;
+  margin: 0 auto;
 
-  }
-  
-  h1 {
+  .title {
     color: red;
     align-items: center;
     font-size: 248px;
     margin-top: -50px;
   }
-  
+
   .text {
     color: red;
     align-items: center;
     white-space: nowrap;
     margin-left: -180px;
-    
-
-  }
-  
-
-
-  p {
     margin-top: -30%;
     font-size: 36px;
-
-
   }
-  
+
   a {
     text-decoration: none;
-    color: blue;
-    margin-left: 10px;
+    color: red;
+    margin-left: 100px;
 
+    &:hover {
+      text-decoration: underline;
+    }
   }
-  
+}
