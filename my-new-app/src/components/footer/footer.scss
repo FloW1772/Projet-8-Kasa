@@ -27,3 +27,31 @@ top: 0;
     margin-bottom: -2%;
     
   }
+  @media (max-width: 576px) {
+    .footer {
+      position: fixed;
+      bottom: 0%;
+      left: 0%;
+      width: 100%;
+      padding-top: 10%;
+      padding-bottom: 15%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      transform: translate(-25%);
+      
+  
+      .img {
+        width: 100%;
+        height: auto;
+      }
+  
+      .footer_name {
+        font-size: 20px;
+        
+        
+
+      }
+    }
+  }
+  
