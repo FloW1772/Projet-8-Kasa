@@ -1,15 +1,35 @@
-// .container {
-//     display: inline-block;
-//   }
-  
-//   .logo {
-//     margin-left: 15px;
-//     margin-top: 50px;
-//   }
-  
-//   .text {
-//     margin-left: 80px;
-//     float: left;
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
-//   }
-  
+
+    nav {
+        width: 15%;
+
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            justify-content: space-between;
+
+            a {
+                text-decoration: none;
+                color: red;
+                margin-right: 35px;
+            }
+
+
+        }
+
+        .active {
+            text-decoration: underline;
+            color: red;
+        }
+    }
+}
+
+.logo{
+    margin-left: 50px;
+}

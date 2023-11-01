@@ -33,7 +33,7 @@
   .container {
     width: 100%;
     margin: 0 auto;
-  
+
     .title {
       color: red;
       align-items: center;
@@ -41,7 +41,7 @@
       margin-top: -25px;
       margin-left: 50px;
     }
-  
+
     .text {
       color: red;
       align-items: center;
@@ -52,18 +52,19 @@
       line-height: 1.5;
       max-width: 50%;
     }
-    .link{
+
+    .link {
       margin-bottom: 250px;
     }
-  
+
     a {
       text-decoration: none;
       color: red;
       margin-left: 50px;
-  
+
       &:hover {
         text-decoration: underline;
       }
     }
-  }      
+  }
 }

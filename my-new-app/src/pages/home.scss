@@ -1,6 +1,10 @@
 .section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logement-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
