@@ -35,13 +35,3 @@ export default function Home() {
   );
 }
 
-// const MyComponent = ({ children }) => {
-//   return (
-//     <div>
-//       {children}
-//       <Graph1 image="/image.jpg" />
-//     </div>
-//   );
-// };
-
-// export default MyComponent;

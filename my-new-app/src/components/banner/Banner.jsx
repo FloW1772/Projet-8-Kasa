@@ -2,8 +2,8 @@ import React from 'react';
 // image pour la page 1
 const image1 = require("../../assets/images/Picture1.png");
 
-// image pour la page 2
-const image2 = require("../../assets/images/Picture2.png");
+// // image pour la page 2
+// const image2 = require("../../assets/images/Picture2.png");
 
 // composant Graph pour la page 1
 const Graph1 = ({ image }) => {
@@ -15,24 +15,24 @@ const Graph1 = ({ image }) => {
 };
 
 // composant Graph pour la page 2
-const Graph2 = ({ image }) => {
-  return (
-    <div style={{ backgroundImage: `url(${image})` }}>
-      <h1>Page 2</h1>
-    </div>
-  );
-};
+// const Graph2 = ({ image }) => {
+//   return (
+//     <div style={{ backgroundImage: `url(${image})` }}>
+//       <h1>Page 2</h1>
+//     </div>
+//   );
+// };
 
 // composant App
 const App = () => {
   return (
     <div>
       <Graph1 image={image1} />
-      <Graph2 image={image2} />
+      {/* <Graph2 image={image2} /> */}
     </div>
   );
 };
 
 // export
 export default App;
-export { image1, image2 }; // Add image1 and image2 to the export statement
+export { image1 }; 
