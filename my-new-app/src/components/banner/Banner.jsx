@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 // image pour la page 1
 const image1 = require("../../assets/images/Picture1.png");
 
@@ -35,3 +35,4 @@ const App = () => {
 
 // export
 export default App;
+export { image1, image2 }; // Add image1 and image2 to the export statement
