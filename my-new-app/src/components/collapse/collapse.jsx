@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import './collapse.scss'
 
-const Colapse = ({ children }) => {
+const Collapse = ({ title,description }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -10,10 +11,12 @@ const Colapse = ({ children }) => {
         onClick={() => setIsExpanded(!isExpanded)}
         className={isExpanded ? "btn btn-primary" : "btn btn-secondary"}
       >
-      {isExpanded && <h3>{children}</h3>}
+       <h3>{title}</h3>
       </button>
+      {isExpanded && <p>{description}</p>}
+
     </div>
   );
 };
 
-export default Colapse;
+export default Collapse;

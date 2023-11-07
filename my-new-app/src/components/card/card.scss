@@ -1,5 +1,8 @@
 .card {
     width: 30%;
+    text-decoration: none;
+    display: block;
+    position: relative;
 
     img {
         width: 100%;
@@ -7,10 +10,38 @@
         object-fit: cover;
     }
     h2 {
-        color: red;
-        text-decoration-color: red;
+        color: white;
+        position: absolute;
+        bottom: 5px;
+        top: 205px;
+        left: 23px;
+      }
+      .card-image-container {
+        max-width: 340px;
+        max-height: 340px;
+        margin: 40px 20px;
+        position: relative; 
+        height: 250px;
+      
+        img {
+          border-radius: 10px;
       }
       
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+          z-index: 0; 
+          border-radius: 10px;
+      
+        }
+      
+      
+      }
       
       
       

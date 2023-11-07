@@ -7,7 +7,8 @@
 .logement-cards {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 90px;
   margin-right: 90px;
   justify-content: space-evenly;
@@ -27,38 +28,7 @@
 
 
 
-.card-image-container {
-  max-width: 340px;
-  max-height: 340px;
-  margin: 40px 20px;
-  position: relative; /* Added to position the gradient overlay */
 
-  img {
-    border-radius: 10px;
-    // position: absolute; /* Added to position the image below the gradient overlay */
-    // // top: 0;
-    // left: 0;
-    // // width: 100%;
-    // // height: 100%;
-    // // z-index: 1; /* Added to ensure the image appears above the gradient overlay */
-  }
-
-  /* Gradient overlay */
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
-    z-index: 0; /* Added to ensure the gradient overlay appears below the image */
-    border-radius: 10px;
-
-  }
-
-
-}
 
 
 
