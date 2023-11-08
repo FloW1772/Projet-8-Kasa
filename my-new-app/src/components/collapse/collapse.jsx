@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import './collapse.scss'
+import './collapse.scss';
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
 
 const Collapse = ({ title, description }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div>
+    <div className="collapse">
       <button
         type="button"
         onClick={() => setIsExpanded(!isExpanded)}
