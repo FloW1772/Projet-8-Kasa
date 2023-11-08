@@ -5,12 +5,12 @@ import Footer from '../components/footer/Footer';
 export default function FicheLogement() {
   return (
     <div>
-            <Header />
+      <Header />
 
-FicheLogement
+      FicheLogement
 
-<Footer />
+      <Footer />
 
-</div>
+    </div>
   )
 }
