@@ -7,10 +7,14 @@
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 0;
+    margin-left: 0;
   }
 
   button i {
-    margin-right: 10px;
+    margin-right: 1px;
     font-size: 10.5rem;
     fill: white;
     width: 2rem;
@@ -22,11 +26,8 @@
     color: #fff;
   }
 
-
-
   button.btn-secondary {
     background-color: red;
     color: #fff;
   }
-
 }
