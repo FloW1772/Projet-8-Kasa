@@ -11,9 +11,10 @@ const Collapse = ({ title, description }) => {
         onClick={() => setIsExpanded(!isExpanded)}
         className={isExpanded ? "btn btn-primary" : "btn btn-secondary"}
       >
-         <h3>{title}</h3>
-         <i className="fas fa-chevron-up"></i>
+        <h3>{title}</h3>
+        {isExpanded ? <i className="fas fa-chevron-down"></i> : <i className="fas fa-chevron-up"></i>}
       </button>
+
       {isExpanded && <p>{description}</p>}
 
     </div>

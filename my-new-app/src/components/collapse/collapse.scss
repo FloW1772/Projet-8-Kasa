@@ -1,10 +1,22 @@
 .collapse {
+  p {
+    margin-left: 150px;
+    max-width: 1200px;
+    white-space: pre-wrap;
+    background-color: #F6F6F6;
+    position: relative;
+    margin-top: -25px;
+    margin-bottom: 30px;
+    
+
+  }
+
   button {
     display: flex;
     align-items: center;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     text-align: left;
@@ -13,6 +25,7 @@
     margin-left: 150px;
     margin-top: 25px;
     margin-bottom: 25px;
+
   }
 
   button i {
@@ -24,13 +37,19 @@
     width: 2rem;
     height: 2rem;
 
-    
+    .collapse button:active i {
+      transform: rotate(180deg);
+    }
+
   }
-  button h3{
+
+
+
+  button h3 {
     padding-left: 50px;
-    
+
   }
-  
+
 
   button.btn-primary {
     background-color: red;
