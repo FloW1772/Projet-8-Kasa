@@ -2,7 +2,7 @@
   button {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
@@ -10,16 +10,27 @@
     text-align: left;
     padding-right: 10px;
     padding-left: 0;
-    margin-left: 0;
+    margin-left: 150px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   button i {
-    margin-right: 1px;
-    font-size: 10.5rem;
+    margin-right: -5px;
+    margin-left: 1050px;
+    padding-top: 12px;
+    font-size: 1rem;
     fill: white;
     width: 2rem;
     height: 2rem;
+
+    
   }
+  button h3{
+    padding-left: 50px;
+    
+  }
+  
 
   button.btn-primary {
     background-color: red;
