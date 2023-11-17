@@ -1,16 +1,19 @@
 import React from 'react';
+import Blanche from '../../assets/icones/Vector_blanche.png'
+import Rouge from '../../assets/icones/Vector.png'
 
-export default function Rating({score}) {
+export default function Rating({ ratings }) {
   const stars = [];
+  let redStars = 0;
+
   for (let i = 0; i < 5; i++) {
-    if (score >= i + 1) {
-      stars.push(<i className="fa fa-star" />);
+    if (redStars < ratings) {
+      stars.push(<img src={Rouge} alt="Red star" className="star" />);
+      redStars++;
     } else {
-      stars.push(<i className="fa fa-star-o" />);
+      stars.push(<img src={Blanche} alt="White star" className="star" />);
     }
   }
 
-  return (
-    <div>{stars}</div>
-  )
+  return <div className="rating">{stars}</div>;
 }
