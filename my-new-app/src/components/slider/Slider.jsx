@@ -3,13 +3,13 @@ import './slider.scss';
 
 
 const Slider = ({ pictures }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0); // Manage the current image index
+  const [currentImageIndex, setCurrentImageIndex] = useState(1);
 
   const handleNextSlide = () => {
-    if (currentImageIndex < pictures.length - 1) {
+    if (currentImageIndex < pictures.length) {
       setCurrentImageIndex(currentImageIndex + 1);
     } else {
-      setCurrentImageIndex(0); // Reset to the first image if reaching the end
+      setCurrentImageIndex(0);
     }
   };
 
@@ -17,7 +17,7 @@ const Slider = ({ pictures }) => {
     if (currentImageIndex > 0) {
       setCurrentImageIndex(currentImageIndex - 1);
     } else {
-      setCurrentImageIndex(pictures.length - 1); // Jump to the last image if at the beginning
+      setCurrentImageIndex(pictures.length - 1);
     }
   };
 
@@ -25,9 +25,16 @@ const Slider = ({ pictures }) => {
     <div className="slider-container">
       <div className="slider-images">
         {pictures.map((picture, index) => {
-          const isCurrentImage = index === currentImageIndex; // Check if the image is currently displayed
+          const isCurrentImage = index === currentImageIndex;
           return (
-            <div key={index} className={`slider-image ${isCurrentImage ? 'active' : 'hidden'}`} style={{ visibility: isCurrentImage ? 'visible' : 'hidden' }}>
+            <div key={index} style={{
+              position: 'absolute',
+              top: '-9999px',
+              left: '-9999px',
+              width: '100%',
+              height: '100%',
+              zIndex: isCurrentImage ? 1 : 0,
+            }}>
               <img src={picture} alt="" />
             </div>
           );
@@ -36,11 +43,11 @@ const Slider = ({ pictures }) => {
 
       <div className="slider-navigation">
         <button className="slider-button prev" onClick={handlePreviousSlide}>
-        <i class="fa-solid fa-chevron-left"></i>
+          <i class="fa-solid fa-chevron-left"></i>
         </button>
 
         <button className="slider-button next" onClick={handleNextSlide}>
-        <i class="fa-solid fa-chevron-right"></i>
+          <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
     </div>
