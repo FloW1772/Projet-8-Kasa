@@ -6,6 +6,7 @@ import Slider from '../components/slider/Slider';
 import Rating from '../components/rating/Rating';
 import ErrorPage from '../pages/ErrorPage.jsx'
 import Collapse from '../components/collapse/collapse.jsx';
+import Tags from '../components/tags/Tags.jsx';
 
 export default function FicheLogement() {
     const [logement, setLogement] = useState([]);
@@ -15,13 +16,10 @@ export default function FicheLogement() {
     useEffect(() => {
         fetch("/data.json")
           .then((datas) => {
-            console.log(datas)
             return datas.json();
           })
           .then((jsondata) => {
-            console.log(jsondata)
             const logementData=jsondata.find((item)=>item.id===id) 
-            console.log(logementData)
             setLogement(logementData);
           })
           .catch((error) => console.log(error));
@@ -49,9 +47,20 @@ export default function FicheLogement() {
         </div>
       </section>
 
+      <section className="tags">
+    <h2>Tags</h2>
+    <Tags tags={logement.tags} />
+    console.log(logement.tags)
+
+
+</section>
+
+
       <section className="equipements">
         <h2>Équipements</h2>
         <Collapse
+
+
         // <ul>
         //   {(logement.equipments ?? []).map((equipment) => (
         //     <li key={equipment}>{equipment}</li>
