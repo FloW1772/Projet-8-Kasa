@@ -44,7 +44,7 @@ export default function FicheLogement() {
               <div className="rating">
                 <Rating ratings={logement.rating} />
               </div>
-              <p>{logement.description}</p>
+              <Collapse title="Description" description={logement.description} />
             </div>
           </section>
 
