@@ -1,16 +1,11 @@
-export default function Tags({ tags }) {
-  // Vérifiez si tags est vide
-  if (!tags) {
-    // Si tags est vide, affichez un message
-    return <div>Aucun tag</div>;
-  }
+import React from 'react';
 
-  // Tags n'est pas vide, continuez comme prévu
+export default function Tags({ tags }) {
   return (
     <div>
-      {tags.map((tags, index) => (
-        <Tags key={index} tag={tags} />
+      {tags.map((tag) => (
+        <span key={tag}>{tag}</span>
       ))}
     </div>
-  );
+  )
 }
