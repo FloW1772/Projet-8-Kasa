@@ -9,10 +9,10 @@ export default function Rating({ ratings }) {
 
   for (let i = 0; i < 5; i++) {
     if (redStars < ratings) {
-      stars.push(<img src={Rouge} alt="Red star" className="star" />);
+      stars.push(<img key={i} src={Rouge} alt="Red star" className="star" />);
       redStars++;
     } else {
-      stars.push(<img src={Blanche} alt="White star" className="star" />);
+      stars.push(<img key={i} src={Blanche} alt="White star" className="star" />);
     }
   }
 

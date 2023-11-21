@@ -8,7 +8,7 @@ import ErrorPage from '../pages/ErrorPage.jsx'
 import Collapse from '../components/collapse/collapse.jsx';
 import './fichelogement.scss';
 // import Tags from '../components/tags/Tags.jsx';
-// import Tag from './components/tags/Tag'; // Import the Tag component here
+import Tag from '../components/tag/Tag'; // Import the Tag component here
 
 export default function FicheLogement() {
   const [logement, setLogement] = useState([]);
@@ -22,7 +22,12 @@ export default function FicheLogement() {
       })
       .then((jsondata) => {
         const logementData = jsondata.find((item) => item.id === id)
-        setLogement(logementData);
+        if (!logementData){
+          setError(true)
+        } else {
+          setLogement(logementData);
+
+        }
       })
       .catch((error) => console.log(error));
   }, [id]);
@@ -36,8 +41,10 @@ export default function FicheLogement() {
 
           <section className="fiche-logement">
             <div className="cover">
-            
-    <Slider images={logement.pictures} />
+            {logement.pictures && ( 
+    <Slider pictures={logement.pictures} />
+
+            )}
             </div>
             
             <div className="infos">
@@ -49,12 +56,12 @@ export default function FicheLogement() {
             </div>
           </section>
 
-          {/* <section className="tags">
+          <section className="tags">
             <h2>Tags</h2>
             {logement?.tags?.map((tag) => (
-              <Tags.jsx key={tag} tag={tag} />
+              <Tag key={tag} tag={tag} />
             ))}
-          </section> */}
+          </section>
 
 
 
