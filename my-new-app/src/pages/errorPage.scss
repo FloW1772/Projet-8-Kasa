@@ -30,40 +30,35 @@
 }
 
 @media (max-width: 576px) {
+  /* Styles for smaller screens */
+
   .container {
-    width: 100%;
-    margin: 0 auto;
+    width: 500px; /* Set container width to 500px for smaller screens */
+    margin: 0 auto; /* Center the container horizontally */
 
     .title {
-      color: red;
-      align-items: center;
-      font-size: 124px;
-      margin-top: -25px;
-      margin-left: 50px;
+      color: red; /* Keep header text red */
+      align-items: center; /* Center header text vertically */
+      font-size: 248px; /* Adjust header text size for smaller screens */
+      margin-top: -50px; /* Adjust header text margin for smaller screens */
     }
 
     .text {
-      color: red;
-      align-items: center;
-      white-space: wrap;
-      margin-left: 55px;
-      margin-top: -15%;
-      font-size: 18px;
-      line-height: 1.5;
-      max-width: 50%;
-    }
-
-    .link {
-      margin-bottom: 250px;
+      color: red; /* Keep paragraph text red */
+      align-items: center; /* Center paragraph text vertically */
+      white-space: nowrap; /* Prevent paragraph text from wrapping to multiple lines */
+      margin-left: -180px; /* Adjust paragraph text margin for smaller screens */
+      margin-top: -30%; /* Adjust paragraph text margin for smaller screens */
+      font-size: 36px; /* Adjust paragraph text size for smaller screens */
     }
 
     a {
-      text-decoration: none;
-      color: red;
-      margin-left: 50px;
+      text-decoration: none; /* Keep link text underline removed */
+      color: red; /* Keep link text red */
+      margin-left: 100px; /* Adjust link margin for smaller screens */
 
       &:hover {
-        text-decoration: underline;
+        text-decoration: underline; /* Add underline on hover for smaller screens */
       }
     }
   }

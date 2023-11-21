@@ -3,11 +3,13 @@ import './slider.scss';
 import Slider from "react-slick";
 
 const SliderCollapse = ({ pictures }) => {
+  const imageUrls = pictures.map((picture) => picture.url);
+
   return (
     <div className="cover">
       {pictures && (
         <Slider
-          pictures={pictures}
+          pictures={imageUrls}
           slidesToShow={1}
           slidesToScroll={1}
           arrows={false}
@@ -18,5 +20,6 @@ const SliderCollapse = ({ pictures }) => {
     </div>
   );
 };
+
 
 export default SliderCollapse;

@@ -6,6 +6,7 @@ import Slider from '../components/slider/Slider';
 import Rating from '../components/rating/Rating';
 import ErrorPage from '../pages/ErrorPage.jsx'
 import Collapse from '../components/collapse/collapse.jsx';
+import './fichelogement.scss';
 // import Tags from '../components/tags/Tags.jsx';
 // import Tag from './components/tags/Tag'; // Import the Tag component here
 
