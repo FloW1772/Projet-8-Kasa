@@ -36,10 +36,10 @@ export default function FicheLogement() {
 
           <section className="fiche-logement">
             <div className="cover">
-              {logement.pictures && (
-                <Slider pictures={logement.pictures} />
-              )}
+            
+    <Slider images={logement.pictures} />
             </div>
+            
             <div className="infos">
               <h2>{logement.title}</h2>
               <div className="rating">
