@@ -7,6 +7,7 @@ import Rating from '../components/rating/Rating';
 import ErrorPage from '../pages/ErrorPage.jsx'
 import Collapse from '../components/collapse/collapse.jsx';
 import Tags from '../components/tags/Tags.jsx';
+// import Tag from './components/tags/Tag'; // Import the Tag component here
 
 export default function FicheLogement() {
   const [logement, setLogement] = useState([]);
@@ -49,7 +50,11 @@ export default function FicheLogement() {
 
           <section className="tags">
             <h2>Tags</h2>
-            <Tags tags={logement.tags} />
+            logement &&
+  logement.tags &&
+  logement.tags.map((tag) => (
+    <Tags.jsx key={tag} tag={tag} />
+            ))}
           </section>
 
 
