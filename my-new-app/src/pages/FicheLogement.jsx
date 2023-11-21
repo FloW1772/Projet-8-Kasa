@@ -6,7 +6,7 @@ import Slider from '../components/slider/Slider';
 import Rating from '../components/rating/Rating';
 import ErrorPage from '../pages/ErrorPage.jsx'
 import Collapse from '../components/collapse/collapse.jsx';
-import Tags from '../components/tags/Tags.jsx';
+// import Tags from '../components/tags/Tags.jsx';
 // import Tag from './components/tags/Tag'; // Import the Tag component here
 
 export default function FicheLogement() {
@@ -58,18 +58,8 @@ export default function FicheLogement() {
 
 
 
-          <section className="equipements">
-            <h2>Équipements</h2>
-            <Collapse
+<Collapse title="Équipements" description={logement.equipments?.join(', ')} />
 
-
-            // <ul>
-            //   {(logement.equipments ?? []).map((equipment) => (
-            //     <li key={equipment}>{equipment}</li>
-            //   ))}
-            // </ul>
-            />
-          </section>
 
           <section className="localisation">
             <h2>Localisation</h2>
