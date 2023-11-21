@@ -48,14 +48,12 @@ export default function FicheLogement() {
             </div>
           </section>
 
-          <section className="tags">
+          {/* <section className="tags">
             <h2>Tags</h2>
-            logement &&
-  logement.tags &&
-  logement.tags.map((tag) => (
-    <Tags.jsx key={tag} tag={tag} />
+            {logement?.tags?.map((tag) => (
+              <Tags.jsx key={tag} tag={tag} />
             ))}
-          </section>
+          </section> */}
 
 
 
