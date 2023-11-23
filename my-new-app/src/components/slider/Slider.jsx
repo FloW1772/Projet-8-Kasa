@@ -1,6 +1,7 @@
 import { useState } from "react";
 import './slider.scss';
-
+import left from '../../assets/icones/left.png'
+import right from '../../assets/icones/right.png'
 
 const Slider = ({ pictures }) => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -20,12 +21,12 @@ const Slider = ({ pictures }) => {
     <div className="slider-container">
       <img src={pictures[currentSlide]} alt="" />
       <div class="slider-btn-prev" onClick={goToPrevSlide}>
-        <i class="fa-solid fa-chevron-left"></i>
+        <img src="left" />
       </div>
 
 
       <div className="slider-btn-next" onClick={goToNextSlide}>
-        <i class="fa-solid fa-chevron-right"></i>
+        <img src="right"/>
       </div>
 
 
