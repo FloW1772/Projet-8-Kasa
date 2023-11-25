@@ -22,7 +22,7 @@ export default function FicheLogement() {
       })
       .then((jsondata) => {
         const logementData = jsondata.find((item) => item.id === id)
-        if (!logementData){
+        if (!logementData) {
           setError(true)
         } else {
           setLogement(logementData);
@@ -41,19 +41,17 @@ export default function FicheLogement() {
 
           <section className="fiche-logement">
             <div className="cover">
-            {logement.pictures && ( 
-    <Slider pictures={logement.pictures} />
+              {logement.pictures && (
+                <Slider pictures={logement.pictures} />
 
-            )}
+              )}
             </div>
-            
+
             <div className="infos">
               <h2>{logement.title}</h2>
-              <div className="rating">
-                <Rating ratings={logement.rating} />
-              </div>
-              <Collapse title="Description" description={logement.description} />
-            </div>
+
+              <section className="localisation">
+            <p>{logement.location}</p>
           </section>
 
           <section className="tags">
@@ -63,16 +61,22 @@ export default function FicheLogement() {
             ))}
           </section>
 
-
-
-
-<Collapse title="Équipements" description={logement.equipments?.join(', ')} />
-
-
-          <section className="localisation">
-            <h2>Localisation</h2>
-            <p>{logement.location}</p>
+              <div className="rating">
+                <Rating ratings={logement.rating} />
+              </div>
+              <Collapse title="Description" description={logement.description} />
+            </div>
           </section>
+
+         
+
+
+
+
+          <Collapse title="Équipements" description={logement.equipments?.join(', ')} />
+
+
+          
 
           <section className="contact">
             <h2>Contact</h2>
