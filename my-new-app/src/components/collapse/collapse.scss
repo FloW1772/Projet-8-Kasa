@@ -67,28 +67,3 @@
   }
 }
 
-@media (max-width: 576px) {
-  .collapse {
-    p {
-      margin-left: 0;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      max-width: 100%;
-    }
-
-    button {
-      display: block;
-      margin-left: 0;
-      margin-top: 15px;
-      margin-bottom: 15px;
-
-      i {
-        margin-left: 50px;
-      }
-
-      h3 {
-        padding-left: 0;
-      }
-    }
-  }
-}
