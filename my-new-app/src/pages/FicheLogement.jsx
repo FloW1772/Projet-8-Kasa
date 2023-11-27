@@ -54,16 +54,18 @@ export default function FicheLogement() {
             <p>{logement.location}</p>
           </section>
 
-          <section className="tags">
-            <h2>Tags</h2>
-            {logement?.tags?.map((tag) => (
-              <Tag key={tag} tag={tag} />
-            ))}
-          </section>
+          <div className="tags-and-rating">
+  <section className="tags">
+    {logement?.tags?.map((tag) => (
+      <Tag key={tag} tag={tag} />
+    ))}
+  </section>
 
-              <div className="rating">
-                <Rating ratings={logement.rating} />
-              </div>
+  <div className="rating">
+    <Rating ratings={logement.rating} />
+  </div>
+</div>
+
               <Collapse title="Description" description={logement.description} />
             </div>
           </section>
