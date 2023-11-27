@@ -23,18 +23,34 @@
     margin: 10px;
   }
 
-  .my-collapse-container {
+  div.collapse-container {
     display: flex;
     flex-direction: row;
     margin: 20px;
-  }
-  
-  .my-collapse {
     margin-left: -10%;
-    margin-right: -30%;
-    button {
-      width: 50%;
-    }
   }
   
+  div.collapse-container .collapse {
+    margin-left: 3%;
+    margin-right: -10%;
+    width: 50%;
+    p {
+      max-width: 660px;
+    }
+    button i {
+      margin-left: 70%;    
+    }
+  
+    div.collapse-container .collapse-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  
+    div.collapse-container .collapse-content {
+      padding: 10px;
+    }
+//     div.collapse-container button i {
+// margin-left: 50px;    }
+
+  }
   

@@ -62,7 +62,7 @@ export default function FicheLogement() {
           </section>
           
 
-          <div class="my-collapse-container">
+          <div class="collapse-container">
             <Collapse title="Description" description={logement.description} />
             <Collapse title="Équipements" description={logement.equipments?.join(', ')} />
           </div>
