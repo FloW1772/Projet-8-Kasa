@@ -30,7 +30,7 @@ const Slider = ({ pictures }) => {
         <img src={rightImage} alt="Next" />
       </div>
 
-      <div>
+      <div className="counter">
         {currentSlide + 1}/{pictures.length}
       </div>
     </div>

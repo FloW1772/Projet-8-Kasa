@@ -22,3 +22,19 @@
   .rating {
     margin: 10px;
   }
+
+  .my-collapse-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+  }
+  
+  .my-collapse {
+    margin-left: -10%;
+    margin-right: -30%;
+    button {
+      width: 50%;
+    }
+  }
+  
+  
