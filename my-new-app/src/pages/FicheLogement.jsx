@@ -39,32 +39,37 @@ export default function FicheLogement() {
           <section className="fiche-logement">
             <div className="cover">
               {logement.pictures && <Slider pictures={logement.pictures} />}
-               <section className="contact">
-           <p>{logement.host.name}</p>
-           <img src={logement.host.picture} alt="" />
-          </section>
+
             </div>
 
-            <div className="infos">
-              <h2>{logement.title}</h2>
+            <div className="infos-contact">
+              <div className="infos">
+                <h2>{logement.title}</h2>
+                {logement.host && (
+                  <section className="contact">
+                    <p>{logement.host.name}</p>
+                    <img src={logement.host.picture} alt="" />
+                  </section>
+                )}
+              </div>
 
               <section className="localisation">
                 <p>{logement.location}</p>
               </section>
-            <div className="tags-and-rating">
-              <section className="tags">
-                {logement?.tags?.map((tag) => (
-                  <Tag key={tag} tag={tag} />
-                ))}
-              </section>
+              <div className="tags-and-rating">
+                <section className="tags">
+                  {logement?.tags?.map((tag) => (
+                    <Tag key={tag} tag={tag} />
+                  ))}
+                </section>
 
-              <div className="rating">
-                <Rating ratings={logement.rating} />
+                <div className="rating">
+                  <Rating ratings={logement.rating} />
+                </div>
               </div>
             </div>
-            </div>
           </section>
-          
+
 
           <div class="collapse-container">
             <Collapse title="Description" description={logement.description} />
@@ -72,7 +77,7 @@ export default function FicheLogement() {
           </div>
 
 
-         
+
 
           <Footer />
         </div>
