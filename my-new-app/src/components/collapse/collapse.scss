@@ -70,17 +70,21 @@
 
 @media (max-width: 576px) {
   .collapse p {
-    margin-left: 0px;
-    max-width: 300px;
+    max-width: 260px;
     width: 100%;
-margin-left: 55px;
-padding-right: 1px;
-padding-left: 25px;
+    margin-left: 60px;
+    padding-right: 1px;
+    padding-left: 25px;
+  }
+
+  .collapse button {
+    width: 70%;
+    margin-left: 60px;
 
   }
 
   .collapse button i {
-    margin-left: 175px;
+    margin-left: 125px; 
   }
 }
 
