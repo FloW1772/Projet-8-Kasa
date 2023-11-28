@@ -16,25 +16,5 @@
   border-radius: 30px;
 }
 
-.logement-cards::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 10px;
-  background-color: #fff;
-}
 
-@media (max-width: 576px) {
-  .logement-cards {
-    flex-direction: column;
-    /* Remove side margins for smaller screens */
-    margin-left: 0;
-    margin-right: 0;
-  }
 
-  .logement-cards::after {
-    display: none; /* Hide the after element for smaller screens */
-  }
-}

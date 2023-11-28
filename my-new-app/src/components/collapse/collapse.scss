@@ -68,3 +68,23 @@
   }
 }
 
+@media (max-width: 576px) {
+  .collapse p {
+    margin-left: 0px;
+    max-width: 300px;
+    width: 100%;
+margin-left: 55px;
+padding-right: 1px;
+padding-left: 25px;
+
+  }
+
+  .collapse button i {
+    margin-left: 175px;
+  }
+}
+
+button.btn-primary, 
+  button.btn-secondary {
+margin-left: 45px;
+}

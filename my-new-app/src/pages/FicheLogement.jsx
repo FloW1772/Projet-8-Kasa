@@ -69,10 +69,8 @@ export default function FicheLogement() {
 
 
           <section className="contact">
-            <h2>Contact</h2>
-            <p>
-              <a href="#">Contacter l'hôte</a>
-            </p>
+           <p>{logement.host.name}</p>
+           <img src={logement.host.picture} alt="" />
           </section>
 
           <Footer />

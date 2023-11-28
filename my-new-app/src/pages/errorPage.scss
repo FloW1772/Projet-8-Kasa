@@ -40,36 +40,21 @@
     }
   }
 }
-
 @media (max-width: 576px) {
 
-  .container {
-    width: 500px; 
-    margin: 0 auto;
-    .title {
-      color: red; 
-      align-items: center; 
-      font-size: 248px; 
-      margin-top: -50px; 
-    }
+  .title {
+    font-size: 1.5em;
+    margin-top: -25px;
+  }
 
-    .text {
-      color: red; 
-      align-items: center; 
-      white-space: nowrap; 
-      margin-left: -180px; 
-      margin-top: -30%; 
-      font-size: 36px; 
-    }
+  .text {
+padding-bottom: 400px;
+  }
 
-    a {
-      text-decoration: none; 
-      color: red; 
-      margin-left: 100px; 
 
-      &:hover {
-        text-decoration: underline; 
-      }
-    }
+  .link {
+padding-bottom: 89px;
+
   }
 }
+
