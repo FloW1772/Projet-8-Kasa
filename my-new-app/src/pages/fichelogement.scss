@@ -97,4 +97,39 @@
       }
     }
   }
+  @media (max-width: 576px) {
+    div.collapse-container {
+      display: block; 
+      margin-bottom: 150px; 
+      flex-direction: column;
+      margin-right: -175px;
+      margin-top: 250px;
+  
+      .collapse {
+        height: 400px; 
+      }
+  
+      p {
+        max-width: 590px;
+      }
+  
+      button i {
+        margin-left: -50px;
+      }
+  
+      div.collapse-container .collapse-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+  
+      div.collapse-container .collapse-content {
+        padding: 10px;
+      }
+    }
+  }
+  
+    .tags-and-rating {
+      flex-direction: column;
+    }
+  
   
