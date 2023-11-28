@@ -14,7 +14,7 @@
     align-items: center;
     white-space: nowrap;
     margin-left: -180px;
-    margin-top: -30%;
+    margin-top: -22.1%;
     font-size: 36px;
   }
 
@@ -41,20 +41,31 @@
   }
 }
 @media (max-width: 576px) {
+  .container {
+    width: 100%;
 
-  .title {
-    font-size: 1.5em;
-    margin-top: -25px;
+    .title {
+      font-size: 160px;
+      margin-left: 35px;
+      margin-top: 25px;
+      margin-bottom: 155px;
+    }
+    .text {
+      font-size: 14px;
+      margin-left: 45px;
+      margin-bottom: 125px;
+
+
+
+    }
+  
+    .link {
+      font-size: 12px;
+    }
   }
 
-  .text {
-padding-bottom: 400px;
-  }
 
 
-  .link {
-padding-bottom: 89px;
-
-  }
 }
+
 
