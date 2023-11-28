@@ -19,7 +19,7 @@
             a {
                 text-decoration: none;
                 color: red;
-                margin-right: 50px;
+                            margin-right: 50px;
             }
 
 
@@ -51,7 +51,7 @@
     ul {
       flex-direction: row;
       margin: 0;
-      margin-left: -75px;
+      margin-left: -115px;
       padding: 0;
       list-style: none;
     }
@@ -61,6 +61,8 @@
       display: inline-block;
       text-decoration: none;
       color: #fff;
+      white-space: nowrap;
+
     }
 
     .active {
@@ -71,5 +73,6 @@
   .logo {
     margin-left: 0;
     margin-bottom: 0;
+    width: 40%;
   }
 }
