@@ -39,6 +39,10 @@ export default function FicheLogement() {
           <section className="fiche-logement">
             <div className="cover">
               {logement.pictures && <Slider pictures={logement.pictures} />}
+               <section className="contact">
+           <p>{logement.host.name}</p>
+           <img src={logement.host.picture} alt="" />
+          </section>
             </div>
 
             <div className="infos">
@@ -68,10 +72,7 @@ export default function FicheLogement() {
           </div>
 
 
-          <section className="contact">
-           <p>{logement.host.name}</p>
-           <img src={logement.host.picture} alt="" />
-          </section>
+         
 
           <Footer />
         </div>
