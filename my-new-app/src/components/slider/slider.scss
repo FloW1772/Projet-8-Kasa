@@ -49,13 +49,16 @@
   }
   @media (max-width: 576px) {
     .slider-container {
-      width: 800px;
+      width: 600px;
       height: 300px;
+      margin-left: -210px;
     }
   
     .counter {
       width: 50px;
       height: 50px;
+      margin-left: 70px;
+      margin-bottom: -30px;
     }
   
     .counter img {
@@ -63,9 +66,11 @@
       height: 25px;
     }
   
-    .slider-btn-prev,
+    .slider-btn-prev{
+      margin-left: 10px;
+    }
     .slider-btn-next {
-      display: none;
+      margin-right: 10px;
     }
   }
   

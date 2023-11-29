@@ -102,6 +102,10 @@
     }
   }
   @media (max-width: 576px) {
+
+    .infos h2 {
+      margin-left: 40px;
+    }
     div.collapse-container {
       display: block; 
       margin-bottom: 150px; 
@@ -132,7 +136,36 @@
     }
     .tags-and-rating {
       flex-direction: column;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      flex-shrink: 1;
     }
+    
+    
+    .rating, .contact {
+      display: flex;
+      align-items: center;
+    }
+    
+    .contact {
+      margin-left: auto; /* Use auto margin to center the contact section */
+    }
+    
+    .contact p {
+      margin-right: 30px;
+      color: red;
+    }
+    
+    .contact img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 300px;
+      margin-top: 10px;
+    }
+    
+    
   }
   
     
