@@ -1,76 +1,77 @@
 .slider-container {
-    width: 1240px;
-    height: 415px;
-    position: relative;
-    overflow: hidden;
+  width: 1240px;
+  height: 415px;
+  position: relative;
+  overflow: hidden;
+}
+
+.counter {
+  position: absolute;
+  bottom: 0;
+  left: 60%;
+  transform: translateX(-50%);
+  width: 100px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-left: 250px;
+
+}
+
+
+.slider-btn-prev,
+.slider-btn-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.slider-btn-prev {
+  left: 20px;
+}
+
+.slider-btn-next {
+  right: 20px;
+}
+
+.slider-btn-prev img,
+.slider-btn-next img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 576px) {
+  .slider-container {
+    width: 600px;
+    height: 300px;
+    margin-left: -210px;
   }
 
   .counter {
-    position: absolute;
-    bottom: 0;
-    left: 60%;
-    transform: translateX(-50%);
-    width: 100px;
-    text-align: center;
-    color: #fff;
-    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin-left: 70px;
+    margin-bottom: -30px;
   }
-  
-  .slider-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    padding-left: 250px;
 
- }
-  
-  
-  .slider-btn-prev,
-  .slider-btn-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    cursor: pointer;
+  .counter img {
+    width: 25px;
+    height: 25px;
   }
-  
+
   .slider-btn-prev {
-    left: 20px;
+    margin-left: 10px;
   }
-  
+
   .slider-btn-next {
-    right: 20px;
+    margin-right: 10px;
   }
-  
-  .slider-btn-prev img,
-  .slider-btn-next img {
-    width: 30px;
-    height: 30px;
-  }
-  @media (max-width: 576px) {
-    .slider-container {
-      width: 600px;
-      height: 300px;
-      margin-left: -210px;
-    }
-  
-    .counter {
-      width: 50px;
-      height: 50px;
-      margin-left: 70px;
-      margin-bottom: -30px;
-    }
-  
-    .counter img {
-      width: 25px;
-      height: 25px;
-    }
-  
-    .slider-btn-prev{
-      margin-left: 10px;
-    }
-    .slider-btn-next {
-      margin-right: 10px;
-    }
-  }
-  
+}

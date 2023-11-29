@@ -1,201 +1,201 @@
 .infos h2 {
-    color: red;
-    display: block;
-    margin-left: 250px;
+  color: red;
+  display: block;
+  margin-left: 250px;
+}
+
+
+
+.localisation p {
+  color: red;
+  display: block;
+  margin-left: 250px;
+}
+
+.tags-and-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tags {
+  margin: 10px;
+}
+
+.rating {
+  margin-right: 150px;
+}
+
+div.collapse-container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+div.collapse-container .collapse {
+  margin-left: -2%;
+  margin-right: -5%;
+  width: 50%;
+
+  p {
+    max-width: 590px;
   }
 
-  
-  
-  .localisation p {
-    color: red;
-    display: block;
-    margin-left: 250px;
+  button i {
+    margin-left: 70%;
   }
-  .tags-and-rating {
+
+  div.collapse-container .collapse-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  div.collapse-container .collapse-content {
+    padding: 10px;
+  }
+
+
+}
+
+.infos-contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+
+  .infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    .contact {
+      display: flex;
+      align-items: center;
+
+
+      p {
+        margin-right: 30px;
+        color: red;
+      }
+
+      img {
+        width: 20%;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 280px;
+        margin-top: 10px;
+
+      }
+    }
+  }
+
+  .localisation {
+    p {
+      font-size: 14px;
+      color: red;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .infos h2 {
+    margin-left: 40px;
+    max-width: 150px;
+  }
+
+  .infos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .tags {
-    margin: 10px;
-  }
-  
   .rating {
-    margin-right: 150px;
+    margin-left: 14px;
+    margin-top: 10px;
   }
 
+
+
   div.collapse-container {
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-  }
-  
-  div.collapse-container .collapse {
-    margin-left: -2%;
-    margin-right: -5%;
-    width: 50%;
+    display: block;
+    margin-bottom: 150px;
+    flex-direction: column;
+    margin-right: -175px;
+    margin-top: 250px;
+
+    .collapse {
+      height: 400px;
+    }
+
     p {
       max-width: 590px;
     }
+
     button i {
-      margin-left: 70%;    
+      margin-left: -50px;
     }
-  
+
+
     div.collapse-container .collapse-title {
       font-size: 1.5rem;
       font-weight: bold;
     }
-  
+
     div.collapse-container .collapse-content {
       padding: 10px;
     }
+  }
 
+  .tags-and-rating {
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+
+
+
+  .contact {
+    margin-left: auto;
 
   }
+
+  .contact p {
+    margin-left: 30px;
+
+    color: red;
+  }
+
+  .contact img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+
   .infos-contact {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-bottom: 20px;
-  
-    .infos {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-  
-      h2 {
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 0;
-      }
-  
-      .contact {
-        display: flex;
-        align-items: center;
-        
-  
-        p {
-          margin-right: 30px;
-          color: red;
-        }
-  
-        img {
-          width: 20%;
-          height: 70%;
-          object-fit: cover;
-          border-radius: 50%;
-          margin-right: 280px;
-          margin-top: 10px;
-
-        }
-      }
-    }
-  
-    .localisation {
-      p {
-        font-size: 14px;
-        color: red;
-      }
-    }
+    flex-wrap: wrap;
   }
-  @media (max-width: 576px) {
 
-    .infos h2 {
-      margin-left: 40px;
-      max-width: 150px;
-    }
-   
-      .infos {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
-    
-      .rating {
-        margin-left: 14px; 
-        margin-top: 10px;
-      }
-    
-    
-    
-    div.collapse-container {
-      display: block; 
-      margin-bottom: 150px; 
-      flex-direction: column;
-      margin-right: -175px;
-      margin-top: 250px;
-  
-      .collapse {
-        height: 400px; 
-      }
-  
-      p {
-        max-width: 590px;
-      }
-  
-      button i {
-        margin-left: -50px;
-      }
 
-  
-      div.collapse-container .collapse-title {
-        font-size: 1.5rem;
-        font-weight: bold;
-      }
-  
-      div.collapse-container .collapse-content {
-        padding: 10px;
-      }
-    }
-    .tags-and-rating {
-      flex-direction: column;
-      flex-wrap: wrap;
-      flex-grow: 1;
-      flex-shrink: 1;
-    }
-    
-    
-    
-    
-    .contact {
-      margin-left: auto;
+  .infos {
+    flex: 1;
+  }
 
-    }
-    
-    .contact p {
-      margin-left: 30px;
 
-      color: red;
-    }
-    
-    .contact img {
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-top: 10px;
-    }
-    
-    .infos-contact {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-    
-    
-      .infos {
-        flex: 1;
-      }
-    
-     
-      
-    }
-    
-  
-  
-    
-  
-  
+
+}

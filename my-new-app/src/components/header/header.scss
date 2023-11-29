@@ -1,39 +1,39 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
 
-    nav {
-        width: 20%;
+  nav {
+    width: 20%;
 
-        ul {
-          width: 100%;
-            display: flex;
-            list-style: none;
-            padding: 0;
-            justify-content: space-between;
-
-
-            a {
-                text-decoration: none;
-                color: red;
-                            margin-right: 50px;
-            }
+    ul {
+      width: 100%;
+      display: flex;
+      list-style: none;
+      padding: 0;
+      justify-content: space-between;
 
 
-        }
+      a {
+        text-decoration: none;
+        color: red;
+        margin-right: 50px;
+      }
 
-        .active {
-            text-decoration: underline;
-            color: red;
-        }
+
     }
+
+    .active {
+      text-decoration: underline;
+      color: red;
+    }
+  }
 }
 
 .logo {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 @media (max-width: 576px) {
@@ -65,7 +65,8 @@
 
     .active {
       text-decoration: underline;
-      color: red;    }
+      color: red;
+    }
   }
 
   .logo {
