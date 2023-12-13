@@ -33,7 +33,6 @@ div.collapse-container {
 
 div.collapse-container .collapse {
   width: 100%;
-  margin: 0;
 
 
   div.collapse-container .collapse-title {
@@ -75,7 +74,7 @@ div.collapse-container .collapse {
 
   .localisation {
     .rating {
-      margin-top: 5px;
+      margin-top: 15px;
     }
 
     p {
@@ -138,8 +137,9 @@ div.collapse-container .collapse {
   div.collapse-container {
     display: block;
     flex-direction: column;
-
-
+    margin: 0;
+    padding: 0;
+    width: 80%;
     div.collapse-container .collapse-title {
       font-size: 1.5rem;
       font-weight: bold;
@@ -182,14 +182,8 @@ div.collapse-container .collapse {
   }
 }
 
-@media (max-width: 990px) {
-  .collapse-container {
-    .collapse {
-      margin-right: 2000px;
-
-
-    }
+@media (max-width: 1366px) {
+  div.collapse-container {
+    margin-bottom: 269px;
   }
-
-
 }
