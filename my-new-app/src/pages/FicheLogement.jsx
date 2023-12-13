@@ -37,41 +37,34 @@ export default function FicheLogement() {
           <Header />
 
           <section className="fiche-logement">
-            <div className="cover">
-              {logement.pictures && <Slider pictures={logement.pictures} />}
-
-            </div>
+            {logement.pictures && <Slider pictures={logement.pictures} />}
 
             <div className="infos-contact">
               <div className="infos">
-                <h2>{logement.title}</h2>
-                {logement.host && (
-                  <section className="contact">
-                    <p>{logement.host.name}</p>
-                    <img src={logement.host.picture} alt="" />
-                  </section>
-                )}
-              </div>
-
-              <section className="localisation">
+                <h1>{logement.title}</h1>
                 <p>{logement.location}</p>
-              </section>
-              <div className="tags-and-rating">
-                <section className="tags">
+                <div className="tags">
                   {logement?.tags?.map((tag) => (
                     <Tag key={tag} tag={tag} />
                   ))}
-                </section>
-
-                <div className="rating">
-                  <Rating ratings={logement.rating} />
                 </div>
               </div>
+
+              <div className="localisation">
+                {logement.host && (
+                  <div className="contact">
+                    <p>{logement.host.name.split(" ")[0]}<br />{logement.host.name.split(" ")[1]}</p>
+                    <img src={logement.host.picture} alt="" />
+                  </div>
+                )}
+                <Rating ratings={logement.rating} />
+              </div>
             </div>
+
           </section>
 
 
-          <div class="collapse-container">
+          <div className="collapse-container">
             <Collapse title="Description" description={logement.description} />
             <Collapse title="Équipements" description={logement.equipments?.join(', ')} />
           </div>

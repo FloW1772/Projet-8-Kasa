@@ -5,7 +5,6 @@ import rightImage from "../../assets/icones/right.png";
 
 const Slider = ({ pictures }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  console.log(pictures);
 
   const goToNextSlide = () => {
     setCurrentSlide(

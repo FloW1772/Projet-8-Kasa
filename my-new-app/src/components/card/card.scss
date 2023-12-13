@@ -13,11 +13,12 @@
   h2 {
     color: white;
     position: absolute;
-    bottom: 5px;
-    top: 205px;
+    bottom: 29px;
     left: 23px;
-    font-size: 22px;
-    max-width: 330px;
+    font-size: 18px;
+    max-width: 76%;
+    font-weight: normal;
+
   }
 
   .card-image-container {
@@ -51,6 +52,18 @@
 
 
 
+
+
+}
+
+@media (max-width: 990px) {
+  .card {
+    width: 47%;
+
+    h2 {
+      width: 87%;
+    }
+  }
 
 
 }

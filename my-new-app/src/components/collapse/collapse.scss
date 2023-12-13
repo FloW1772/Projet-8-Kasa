@@ -1,16 +1,19 @@
 .collapse {
+  margin-left: 10%;
+  margin-right: 10%;
+
+
   p {
-    margin-left: 150px;
-    max-width: 1200px;
     width: 100%;
     white-space: pre-wrap;
     background-color: #F6F6F6;
     position: relative;
-    margin-top: -25px;
     margin-bottom: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
+    margin-top: 0;
+    box-sizing: border-box;
 
 
 
@@ -18,6 +21,7 @@
 
   button {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
     border: 1px solid #ccc;
@@ -26,17 +30,14 @@
     transition: all 0.3s ease-in-out;
     text-align: left;
     padding-left: 0;
-    margin-left: 150px;
     margin-top: 25px;
-    margin-bottom: 25px;
-    width: 80%;
+    width: 100%;
+
 
 
   }
 
   button i {
-    margin-right: -5px;
-    margin-left: 1050px;
     padding-top: 12px;
     font-size: 1rem;
     fill: white;
@@ -58,32 +59,32 @@
 
 
   button.btn-primary {
-    background-color: red;
+    background-color: #FF6060;
     color: #fff;
+
+
   }
 
   button.btn-secondary {
-    background-color: red;
+    background-color: #FF6060;
     color: #fff;
   }
+
 }
 
 @media (max-width: 576px) {
   .collapse p {
-    max-width: 260px;
     width: 100%;
-    margin-left: 60px;
     padding-right: 1px;
     padding-left: 25px;
-  }
-
-  .collapse button {
-    width: 70%;
-    margin-left: 60px;
 
   }
+}
 
-  .collapse button i {
-    margin-left: 125px;
+@media (max-width:990px) {
+  .collapse {
+    margin-bottom: 11%;
+    margin-top: 11%;
+
   }
 }

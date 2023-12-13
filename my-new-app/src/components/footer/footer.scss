@@ -6,28 +6,15 @@
   align-items: center;
   width: 100%;
   padding-top: 2%;
-
-
-}
-
-.img {
-  position: relative;
-  left: 0;
-  top: 0;
 }
 
 .footer_name {
   font-size: 24px;
   color: white;
-  margin-bottom: -2%;
 
 }
 
 @media (max-width: 576px) {
-  .footer {
-    padding-top: 120%;
-  }
-
   .img {
     width: 100%;
     height: auto;

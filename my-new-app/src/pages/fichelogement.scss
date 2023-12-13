@@ -1,15 +1,16 @@
-.infos h2 {
+.infos h1 {
   color: red;
   display: block;
-  margin-left: 250px;
 }
 
+.infos p {
+  color: red;
+}
 
 
 .localisation p {
   color: red;
   display: block;
-  margin-left: 250px;
 }
 
 .tags-and-rating {
@@ -22,9 +23,7 @@
   margin: 10px;
 }
 
-.rating {
-  margin-right: 150px;
-}
+
 
 div.collapse-container {
   display: flex;
@@ -33,17 +32,9 @@ div.collapse-container {
 }
 
 div.collapse-container .collapse {
-  margin-left: -2%;
-  margin-right: -5%;
-  width: 50%;
+  width: 100%;
+  margin: 0;
 
-  p {
-    max-width: 590px;
-  }
-
-  button i {
-    margin-left: 70%;
-  }
 
   div.collapse-container .collapse-title {
     font-size: 1.5rem;
@@ -59,13 +50,16 @@ div.collapse-container .collapse {
 
 .infos-contact {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   margin-bottom: 20px;
+  justify-content: space-between;
+  padding: 0 15px;
+  box-sizing: border-box;
 
   .infos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
@@ -76,9 +70,26 @@ div.collapse-container .collapse {
       margin-bottom: 0;
     }
 
+
+  }
+
+  .localisation {
+    .rating {
+      margin-top: 5px;
+    }
+
+    p {
+      font-size: 14px;
+      color: red;
+      display: inline-block;
+
+    }
+
     .contact {
       display: flex;
       align-items: center;
+      justify-content: center;
+
 
 
       p {
@@ -87,63 +98,46 @@ div.collapse-container .collapse {
       }
 
       img {
-        width: 20%;
-        height: 70%;
+        width: 64px;
+        height: 64px;
         object-fit: cover;
         border-radius: 50%;
-        margin-right: 280px;
         margin-top: 10px;
 
       }
-    }
-  }
-
-  .localisation {
-    p {
-      font-size: 14px;
-      color: red;
     }
   }
 }
 
 @media (max-width: 576px) {
 
-  .infos h2 {
-    margin-left: 40px;
-    max-width: 150px;
+  .infos h1 {
+    margin-left: 15px;
   }
 
-  .infos {
+  .infos p {
+    margin-left: 15px;
+  }
+
+  .infos-contact {
+    flex-wrap: wrap;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+
+    .infos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
   }
 
-  .rating {
-    margin-left: 14px;
-    margin-top: 10px;
-  }
 
 
 
   div.collapse-container {
     display: block;
-    margin-bottom: 150px;
     flex-direction: column;
-    margin-right: -175px;
-    margin-top: 250px;
-
-    .collapse {
-      height: 400px;
-    }
-
-    p {
-      max-width: 590px;
-    }
-
-    button i {
-      margin-left: -50px;
-    }
 
 
     div.collapse-container .collapse-title {
@@ -156,46 +150,46 @@ div.collapse-container .collapse {
     }
   }
 
-  .tags-and-rating {
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
-
-
-
-
-  .contact {
-    margin-left: auto;
-
-  }
-
-  .contact p {
-    margin-left: 30px;
-
-    color: red;
-  }
-
-  .contact img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-top: 10px;
-  }
-
-  .infos-contact {
+  .localisation {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 80%;
+    align-items: center;
+
+    .contact {
+      display: flex;
+      flex-direction: row;
+
+    }
+
+    .contact p {
+      color: red;
+      margin-left: 25%;
+    }
+
+    .contact img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: 10px;
+    }
+
+    .rating {
+      margin-top: 10px;
+      margin-right: 10px;
+    }
   }
+}
+
+@media (max-width: 990px) {
+  .collapse-container {
+    .collapse {
+      margin-right: 2000px;
 
 
-  .infos {
-    flex: 1;
+    }
   }
-
 
 
 }
