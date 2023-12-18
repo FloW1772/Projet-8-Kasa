@@ -1,6 +1,7 @@
 .collapse {
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 1%;
 
 
   p {
@@ -87,4 +88,12 @@
     margin-top: 11%;
 
   }
+}
+@media (max-width: 1366px) {
+  .collapse {
+    margin-bottom: 11%;
+    margin-top: 11%;
+
+  }
+
 }
