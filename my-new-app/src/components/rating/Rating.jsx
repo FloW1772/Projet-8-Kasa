@@ -1,7 +1,6 @@
 import React from 'react';
 import Blanche from '../../assets/icones/Vector_blanche.png'
 import Rouge from '../../assets/icones/Vector.png'
-import './rating.scss'
 
 export default function Rating({ ratings }) {
   const stars = [];

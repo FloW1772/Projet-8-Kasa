@@ -1,7 +1,6 @@
 import React from 'react';
 import './banner.scss'
 
-// composant Graph pour la page 1
 const Banner = ({ image, title }) => {
   return (
     <div className='banner-background' >
@@ -15,5 +14,4 @@ const Banner = ({ image, title }) => {
 
 
 
-// export
 export default Banner;

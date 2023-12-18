@@ -68,13 +68,15 @@
 
 
 }
+
 @media (max-width: 1366px) {
-  .container{
-  .text {
-    margin-bottom: 25%;
+  .container {
+    .text {
+      margin-bottom: 25%;
+    }
+
+    .link {
+      margin-bottom: 41%;
+    }
   }
-  .link{
-    margin-bottom: 41%;
-  }
-}
 }
