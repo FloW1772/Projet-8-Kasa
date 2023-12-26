@@ -10,12 +10,14 @@
   text-align: center;
   color: #fff;
   padding: 0;
+  width: 24px;
+  height: 32px;
 }
 
 
 .slider-container img {
   align-self: center;
-  height: 500px;
+  height: 415px;
   width: 100%;
   object-fit: cover;
 }
@@ -28,6 +30,7 @@
   transform: translateY(-50%);
   z-index: 1;
   cursor: pointer;
+  
 }
 
 .slider-btn-prev {
@@ -40,8 +43,8 @@
 
 .slider-btn-prev img,
 .slider-btn-next img {
-  width: 30px;
-  height: 30px;
+  width: 46.68px;
+  height: 79.2px;
 }
 
 @media (max-width: 576px) {

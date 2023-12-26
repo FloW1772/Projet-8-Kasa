@@ -9,8 +9,8 @@
   flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 65px;
+  margin-right: 65px;
   justify-content: space-evenly;
   background-color: #F6F6F6;
   border-radius: 30px;
@@ -25,6 +25,15 @@
     padding-left: 20px;
     padding-right: 20px;
 
+
+  }
+
+}
+
+@media (max-width: 990px) {
+  .logement-cards {
+    margin-left: 40px;
+    margin-right: 40px;
 
   }
 

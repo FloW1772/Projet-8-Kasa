@@ -20,18 +20,26 @@ const Slider = ({ pictures }) => {
 
   return (
     <div className="slider-container">
-      <img src={pictures[currentSlide]} alt="" />
-      <div className="slider-btn-prev" onClick={goToPrevSlide}>
-        <img src={leftImage} alt="Previous" />
-      </div>
+      {pictures.length === 1 ? (
+        <div className="single-image">
+          <img src={pictures[currentSlide]} alt="{logement.title}" />
+        </div>
+      ) : (
+        <div className="slider-container">
+          <img src={pictures[currentSlide]} alt="{logement.title}" />
+          <div className="slider-btn-prev" onClick={goToPrevSlide}>
+            <img src={leftImage} alt="Previous" />
+          </div>
 
-      <div className="slider-btn-next" onClick={goToNextSlide}>
-        <img src={rightImage} alt="Next" />
-      </div>
+          <div className="slider-btn-next" onClick={goToNextSlide}>
+            <img src={rightImage} alt="Next" />
+          </div>
 
-      <div className="counter">
-        {currentSlide + 1}/{pictures.length}
-      </div>
+          <div className="counter">
+            {currentSlide + 1}/{pictures.length}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
