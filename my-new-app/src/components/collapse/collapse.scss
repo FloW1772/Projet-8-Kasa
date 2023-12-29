@@ -1,5 +1,5 @@
 .collapse {
-  margin-bottom: 1%;
+  margin-bottom: 2.15%;
 
 
   p {
@@ -72,27 +72,28 @@
 }
 
 @media (max-width: 576px) {
-  .collapse p {
-    width: 100%;
-    padding-right: 1px;
-    padding-left: 25px;
+  .apropos-container-collapses {
+    margin-bottom: 73px;
 
-  }
-}
+    .collapse {
+      p {
+        width: 100%;
+        padding-right: 1px;
+        padding-left: 25px;
 
-@media (max-width:990px) {
-  .collapse {
-    margin-bottom: 11%;
-    margin-top: 11%;
-
+      }
+    }
   }
 }
 
 @media (max-width: 1366px) {
-  .collapse {
-    margin-bottom: 13%;
-    margin-top: 11%;
+  .apropos-container-collapses {
+    margin-bottom: 21.5%;
+
+    .collapse {
+      margin-top: 11%;
+
+    }
 
   }
-
 }

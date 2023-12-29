@@ -14,7 +14,7 @@
     color: white;
     position: absolute;
     bottom: 29px;
-    left: 23px;
+    left: 123px;
     font-size: 18px;
     max-width: 57%;
     font-weight: normal;
@@ -25,7 +25,7 @@
   .card-image-container {
     max-width: 340px;
     max-height: 340px;
-    margin: 40px 20px;
+    margin: 40px 120px;
     position: relative;
     height: 250px;
 
@@ -64,9 +64,17 @@
     h2 {
       width: 87%;
     }
+
+    .card-image-container {
+      max-width: 340px;
+      max-height: 340px;
+      margin: 40px -2px;
+      position: relative;
+      height: 250px;
+
+
+    }
   }
-
-
 }
 
 @media (max-width: 576px) {
