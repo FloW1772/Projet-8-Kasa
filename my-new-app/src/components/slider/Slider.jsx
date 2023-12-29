@@ -3,7 +3,7 @@ import "./slider.scss";
 import leftImage from "../../assets/icones/left.png";
 import rightImage from "../../assets/icones/right.png";
 
-const Slider = ({ pictures }) => {
+const Slider = ({ pictures, logementTitle }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const goToNextSlide = () => {
@@ -22,11 +22,11 @@ const Slider = ({ pictures }) => {
     <div className="slider-container">
       {pictures.length === 1 ? (
         <div className="single-image">
-          <img src={pictures[currentSlide]} alt="{logement.title}" />
+          <img src={pictures[currentSlide]} alt={logementTitle} />
         </div>
       ) : (
         <div className="slider-container">
-          <img src={pictures[currentSlide]} alt="{logement.title}" />
+          <img src={pictures[currentSlide]} alt={logementTitle} />
           <div className="slider-btn-prev" onClick={goToPrevSlide}>
             <img src={leftImage} alt="Previous" />
           </div>

@@ -37,7 +37,7 @@ export default function FicheLogement() {
           <Header />
 
           <section className="fiche-logement">
-            {logement.pictures && <Slider pictures={logement.pictures} />}
+            {logement.pictures && <Slider pictures={logement.pictures} logementTitle={logement.title} />}
 
             <div className="infos-contact">
               <div className="infos">

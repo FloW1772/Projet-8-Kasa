@@ -1,3 +1,9 @@
+.fiche-logement {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .infos h1 {
   color: #FF6060;
   display: block;
@@ -5,7 +11,6 @@
 
 .infos p {
   color: #FF6060;
-  margin-left: -50%;
 }
 
 
@@ -20,20 +25,17 @@
   justify-content: space-between;
 }
 
-.tags {
-  margin: 10px;
-}
-
-
-
 div.collapse-container {
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  justify-content: space-between;
+  margin: 20px auto 20px auto;
+  width: 90%;
+
 }
 
 div.collapse-container .collapse {
-  width: 100%;
+  width: 45%;
 
 
   div.collapse-container .collapse-title {
@@ -61,8 +63,8 @@ div.collapse-container .collapse {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 10px;
+    width: 50%;
 
     h2 {
       font-size: 20px;
@@ -109,6 +111,12 @@ div.collapse-container .collapse {
   }
 }
 
+@media (max-width: 1366px) {
+  div.collapse-container {
+    margin-bottom: 269px;
+  }
+}
+
 @media (max-width: 576px) {
 
   .infos h1 {
@@ -129,6 +137,7 @@ div.collapse-container .collapse {
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
+      width: 100%;
     }
   }
 
@@ -136,11 +145,11 @@ div.collapse-container .collapse {
 
 
   div.collapse-container {
-    display: block;
+    display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    width: 80%;
+    width: 100%;
 
     div.collapse-container .collapse-title {
       font-size: 1.5rem;
@@ -152,11 +161,18 @@ div.collapse-container .collapse {
     }
   }
 
+  div.collapse-container .collapse {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .localisation {
     display: flex;
     flex-direction: row-reverse;
-    width: 80%;
+    width: 100%;
     align-items: center;
+    justify-content: space-between;
 
     .contact {
       display: flex;
@@ -181,11 +197,5 @@ div.collapse-container .collapse {
       margin-top: 10px;
       margin-right: 10px;
     }
-  }
-}
-
-@media (max-width: 1366px) {
-  div.collapse-container {
-    margin-bottom: 269px;
   }
 }
